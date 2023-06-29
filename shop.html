@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="shop.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<title>Hair Cut Shop</title>
+</head>
+<body>
+  <section id="banner">
+  	<img src="C:\Users\kinle\Downloads\BARBER__1_-removebg-preview.png" class="logo">
+  	<div class="banner-text">
+  		<h1>Hair Studio</h1>
+  		<p>Style Your Hair is Style Your Life</p>
+  		<div class="banner-btn">
+  			<a href="#"><span></span>Find Out</a>
+  			<a href="#"><span></span>Read More</a>
+  		</div>
+  	</div>
+
+  </section>
+
+  <div id="sideNav">
+  	<nav>
+  		<ul>
+  			<li><a href="#">Home</li>
+  			<li><a href="#">Features</li>
+  			<li><a href="#">Services</li>
+  			<li><a href="#">Testimonials</li> 
+  			<li><a href="#">Meet Us</li>
+  		</ul>
+  	</nav>
+  </div>
+  <div id="manuBtn">
+  	 <img src="https://cdn-icons-png.flaticon.com/512/7216/7216128.png" id="menu">
+  </div>
+  
+   <!--Features-->
+    
+    <section id="Features">
+    <div class="title-text">
+    	<p>FEATURES</p>
+    	<h1>Why Choose Us</h1>
+    </div>
+    <div class="features-box">
+    	<div class="features">
+    		<h2>Experienced Staff</h2>
+    	</div>
+    	<div class="features-img">
+    		<img src="https://www.betterteam.com/images/barber-job-description-5184x3456-20201124.jpeg?crop=40:21,smart&width=1200&dpr=2">
+    	</div>
+    </div>
+    </section>
+
+
+  
+
+
+<script>
+	var menuBth = document.getElementById("manuBtn")
+	var sideNav = document.getElementById("sideNav")
+	var menu = document.getElementById("menu")
+     
+     sideNav.style.right ="-250px";
+    
+	menuBth.onclick = function () {
+		if(sideNav.style.right == "-250px"){
+			sideNav.style.right = "0";
+			menu.scr = "https://cdn4.iconfinder.com/data/icons/user-interface-131/32/close-512.png";
+		}
+		else{
+			sideNav.style.right ="-250px";
+			menu.scr = "https://cdn-icons-png.flaticon.com/512/7216/7216128.png";
+		} 
+	}
+</script>
+
+</body>
+</html>
